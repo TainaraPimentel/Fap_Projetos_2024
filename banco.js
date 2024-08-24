@@ -47,14 +47,18 @@ function cadastrarUsuario(){
 }
 
 function exibirSaldo(){
-
+    let validadorConta = parseInt(prompt("Digite o numero da sua conta: "));
     
+//colocar um for pra procurar numero conta da classe banco
 
+    for(i = 0, Banco.numeroConta < validadorConta, i++){
+        if(Banco.numeroConta == validadorConta){
+            Banco.exibirSaldo()
 
-
-
-
-
+        } else {
+            alert("Conta Inexistente")
+        }
+    }
 }
 
 function debitar(){

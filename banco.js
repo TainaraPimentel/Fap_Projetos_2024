@@ -4,7 +4,7 @@
 let contas = []
 let referencialConta = 1
 
-class Banco (){
+class Banco (nome, telefone, dataNascimento, saldo, numeroConta){
     this.nome = nome
     this.numeroConta = numeroConta
     this.dataNascimento = dataNascimento
@@ -35,15 +35,15 @@ class Banco (){
 }
 
 function cadastrarUsuario(){
-    
+    nome = prompt('Digite o nome');
+    telefone = prompt('Digite o telefone');
+    dataNascimento = prompt('Digite Nascimento');
 
+    numeroConta++;
 
+    let saldo = 1000
 
-
-
-
-
-
+    Contas.push(new Conta(nome, telefone, dataNascimento, saldo, numeroConta));
 }
 
 function exibirSaldo(){

@@ -12,15 +12,25 @@ class Banco (){
     this.saldo = saldo
 
     creditar (){
+        this.saldo += valor;
+    alert("Novo Valor: " + this.saldo);
 
     }
 
     exibirSaldo (){
+        lert("Nome: "+ this.nome +" Telefone: " + this.telefone + 
+    " Nascimento: "+ this.dataNascimento + " Saldo: " + this.saldo +
+    " Numero da conta: " + this.Numeroconta );
 
     }
 
     debitar (){
-
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+            alert("Novo Valor: " + this.saldo);
+        } else {
+            alert("Saldo Insuficiente");
+        }
     }
 }
 
@@ -31,9 +41,13 @@ function cadastrarUsuario(){
 
 
 
+
+
+
 }
 
 function exibirSaldo(){
+
     
 
 

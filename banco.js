@@ -79,12 +79,15 @@ function transferir(){
 }
 
 function excluirConta(){
-    
+    let validadorConta = parseInt(prompt('Digite o numero da conta'));
 
-
-
-
-
-
+    for(i = 0; Banco.numeroConta < validadorConta;i++){
+        if(Banco.numeroConta == validadorConta){
+            Banco.splice(i, 1);
+            alert("Conta Removida");
+            break;
+        }
+            
+    } alert("Conta Invalida");
     
 }

@@ -58,13 +58,15 @@ function exibirSaldo(){
 }
 
 function debitar(){
-
-
-
-
-
-
-
+    let validadorConta = parseInt(prompt('Digite o numero da sua conta'));
+    valor = parseInt(prompt('Digite o valor'));
+  
+    for (i=0, Banco.numeroConta < validadorConta, i++){
+        if (Banco.numeroConta == numeroConta){
+            Banco.debitar(valor)
+        }
+    }
+  
 }
 
 function transferir(){

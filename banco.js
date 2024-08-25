@@ -68,14 +68,20 @@ function debitar(){
 }
 
 function transferir(){
+    let contaOrigem = parseInt(prompt("Digite o número da sua conta: "));
+    let valor = parseInt(prompt("Digite o valor da transação: "));
     
 
+    for (i = 0, Banco.numeroConta < contaOrigem, i++){
+        if (Banco.numeroConta == numeroConta){
+            debitar(valor)
 
+        } else {
+            alert ("Conta inválida")
+        }
+    }
 
-
-
-
-
+    
 }
 
 function excluirConta(){
